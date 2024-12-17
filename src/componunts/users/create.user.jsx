@@ -17,7 +17,11 @@ const CreateUser =()=>{
     }
     const onSubmit=(e)=>{
         e.preventDefault();
-        CreateUserService()
+        const updatedUser ={
+            ...user,
+            phone:parseInt(user.phone,10)
+        }
+        CreateUserService(updatedUser)
         console.log("Submit Button...",{user})
 
     }
