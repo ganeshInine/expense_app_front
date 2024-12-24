@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './componunts/common/header';
 import Footer from './componunts/common/footer';
 import CreateUser from './componunts/users/create.user';
 import UpdateUser from './componunts/users/update.user';
+import UserProfile from './componunts/users/user.profile';
 
 function App() {
   return (
@@ -12,10 +12,11 @@ function App() {
         <Header/>
       </header> */}
         {/* <CreateUser/> */}
-        <UpdateUser/>
-      <footer>
+        {/* <UpdateUser/> */}
+        <UserProfile/>
+      {/* <footer>
         <Footer/>
-      </footer>
+      </footer> */}
     </div>
   );
 }
