@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 import { GetUserSevice } from "../service/user.service";
 const UserProfile=()=>{
     const [user,setUser]=useState({
@@ -30,7 +31,10 @@ const UserProfile=()=>{
     }
 
     return(
+        <>
         <h1>Welcome...!{user.name}</h1>
+        <Outlet />
+        </>
     )
 }
 
